@@ -90,10 +90,10 @@
         }
     })
 
-    searchBtn.addEventListener("click",()=>{
-
-        checkWeather(searchBox.value);
-    })
+    searchBtn.addEventListener("click",(event)=>{
+    event.preventDefault();
+    checkWeather(searchBox.value);
+})
 
 
 </script>
